@@ -1,2 +1,2 @@
-##Demo Apps
-###Angular.js, Node.js, MongoDB and Bootstrap
+Demo Apps
+Angular.js, Node.js, MongoDB and Bootstrap
