@@ -1,0 +1,37 @@
+<div class="nav-bar">
+    <div class="nav-bar-contents">
+        <div class="logo">
+            <img src="/mean-retail-logo.png" />
+        </div>
+        <div class="title">
+            <h6>Mean Retail</h6>
+        </div>
+        <div>
+            <ul>
+                  <li><a class="active" href="#/">Products</a></li>
+                  <li><a ng-href="#/category/Electronics">Electronics</a></li>
+                  <li><a ng-href="#/category/Books">Books</a></li>
+                  <li><a ng-href="#/category/Classics">Classics</a></li>
+                  <li><a ng-href="#/category/Non-Fiction">Non-Fiction</a></li>
+            </ul>
+        </div>
+        <div class="user-info">
+        
+            <div class="checkout" ng-show="user.user">
+                <a ng-href="#/checkout">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            
+            </div>
+            <div class="user" ng-show="user.user">
+                <img src=" {{ user.user.profile.picture }}" />
+            </div>
+            <div class="login" ng-show="!user.user">
+                <a href="/auth/facebook/">
+                <i class="fa fa-facebook"></i>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</div>

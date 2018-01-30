@@ -1,0 +1,21 @@
+<div class="product-wrapper">
+    <div class="product" ng-repeat="product in Products">
+    <div class="product-image">
+      <img ng-src="{{product.pictures[0]}}" />
+    </div>
+    <div class="product-name">
+      <a ng-href="#/product/{{product._id}}">
+        {{product.name}}
+      </a>
+    </div>
+    <div class="product-cost">
+      {{product.displayPrice}}
+    </div>
+    <div class="cart-button" ng-click="addToCart(product);">
+        <i class="fa fa-cart-plus"></i>
+        Add
+   </div>
+  </div>
+  
+  <div style="clear:both"></div>
+</div>
